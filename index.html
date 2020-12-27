@@ -203,6 +203,13 @@
     
              
               </div>
+                     <div class="d-flex justify-content-center">
+                <img onclick="imgx1()" id="imgx1" class="mt-1 mb-1" height="80" src="Cliente_camisas1.jpg" alt="">
+                <img onclick="imgx2()" id="imgx2" class="mt-1 mb-1 ml-2" height="80" src="Cliente_camisas2.jpg" alt="">
+                <img onclick="imgx3()" id="imgx3" class="mt-1 mb-1 ml-2" height="80" src="Cliente_camisas3.jpg" alt="">
+                <img onclick="imgx4()" id="imgx4" class="mt-1 mb-1 ml-2" height="80" src="Cliente_camisas4.jpg" alt="">
+
+              </div>
               </div>
               <div class="areaCompra  ml-2 mr-2 mt-2 mb-2">
               <div class="d-flex justify-content-center">
@@ -468,6 +475,106 @@ function link(){
   }
 }
 
+       function imgx1(){
+    var div=document.getElementById("ImgGrande")
+
+var nome=document.getElementById("imgx1").src
+    var ImgGrande = document.createElement("img");
+    if(div.getAttribute('name')===null){
+
+      div.setAttribute('name','comnome')
+   
+
+ ImgGrande.setAttribute('width', '200')	
+ ImgGrande.setAttribute('class', 'mb-1')	
+ ImgGrande.setAttribute('id','imgP')
+       div.appendChild(ImgGrande)
+       ImgGrande.src=nome
+
+      }
+      else{ 
+        debugger
+        var imagem= document.getElementById("imgP")
+
+        imagem.src=nome
+      }
+
+  }
+  function imgx2(){
+    var div=document.getElementById("ImgGrande")
+debugger
+var nome=document.getElementById("imgx2")
+    if(div.getAttribute('name')===null){
+      var ImgGrande = document.createElement("img");
+
+      div.setAttribute('name','comnome')
+  
+      ImgGrande.setAttribute('id','imgP')
+
+ ImgGrande.setAttribute('width', '200')	
+ ImgGrande.setAttribute('class', 'mb-1')	
+
+       div.appendChild(ImgGrande)
+       ImgGrande.src=nome.src
+
+      }
+      else{
+       var imagem= document.getElementById("imgP")
+        imagem.src=nome.src
+      }
+
+
+  }
+  function imgx3(){
+    var div=document.getElementById("ImgGrande")
+debugger
+var nome=document.getElementById("imgx3")
+    if(div.getAttribute('name')===null){
+      var ImgGrande = document.createElement("img");
+
+      div.setAttribute('name','comnome')
+  
+      ImgGrande.setAttribute('id','imgP')
+
+ ImgGrande.setAttribute('width', '200')	
+ ImgGrande.setAttribute('class', 'mb-1')	
+
+       div.appendChild(ImgGrande)
+       ImgGrande.src=nome.src
+
+      }
+      else{
+       var imagem= document.getElementById("imgP")
+        imagem.src=nome.src
+      }
+
+
+  }
+  function imgx4(){
+    var div=document.getElementById("ImgGrande")
+debugger
+var nome=document.getElementById("imgx4")
+    if(div.getAttribute('name')===null){
+      var ImgGrande = document.createElement("img");
+
+      div.setAttribute('name','comnome')
+  
+      ImgGrande.setAttribute('id','imgP')
+
+ ImgGrande.setAttribute('width', '200')	
+ ImgGrande.setAttribute('class', 'mb-1')	
+
+       div.appendChild(ImgGrande)
+       ImgGrande.src=nome.src
+
+      }
+      else{
+       var imagem= document.getElementById("imgP")
+        imagem.src=nome.src
+      }
+
+
+  }
 
   </script>
 </body>
